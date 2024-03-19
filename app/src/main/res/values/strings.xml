@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CarTing</string>
+    <string name="cerrar_sesion">Cerrar Sesion</string>
+    <string name="guardar">Guardar</string>
+    <string name="dades_personals">Dades Personals</string>
+    <string name="edad">Edad</string>
+    <string name="telefon">Telefon</string>
+    <string name="correo">Correo</string>
+    <string name="user">User</string>
+    <string name="usuari">Usuari</string>
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navhost"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.aramSA.carTing.users.LoginFragment"
+        android:label="LoginFragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.aramSA.carTing.users.RegisterFragment"
+        android:label="RegisterFragment" >
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/eventsFragment"
+        android:name="com.aramSA.carTing.app.events.EventsFragment"
+        android:label="EventsFragment" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.aramSA.carTing.app.main.HomeFragment"
+        android:label="HomeFragment" />
+    <fragment
+        android:id="@+id/perfilFragment"
+        android:name="com.aramSA.carTing.app.perfil.PerfilFragment"
+        android:label="PerfilFragment" />
+    <fragment
+        android:id="@+id/rutasFragment"
+        android:name="com.aramSA.carTing.app.rutas.RutasFragment"
+        android:label="RutasFragment" />
+    <fragment
+        android:id="@+id/xatsFragment"
+        android:name="com.aramSA.carTing.app.xats.XatsFragment"
+        android:label="XatsFragment" />
+</navigation>

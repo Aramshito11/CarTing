@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "809946221925",
+    "project_id": "carting-61e2d",
+    "storage_bucket": "carting-61e2d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:809946221925:android:4dad7ebbff1489a4b5258c",
+        "android_client_info": {
+          "package_name": "com.aramSA.carTing"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9Xl-VO8ZKTr3iq0Gn9QSwzV_s_J8ZFbg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

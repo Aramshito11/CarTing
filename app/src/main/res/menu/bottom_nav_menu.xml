@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/home"
+        android:title="Home" />
+    <item
+        android:id="@+id/xatsFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/xats"
+        android:title="Xats" />
+    <item
+        android:id="@+id/eventsFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/baseline_directions_car_24"
+        android:title="Events" />
+    <item
+        android:id="@+id/rutasFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/rutas"
+        android:title="Rutas" />
+    <item
+        android:id="@+id/perfilFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:icon="@drawable/perfil"
+        android:title="Perfil" />
+</menu>
