@@ -6,13 +6,17 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.EditText
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.aramSA.carTing.R
 import com.aramSA.carTing.databinding.RegisterFragmentBinding
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.FirebaseFirestore
 
 class RegisterFragment: Fragment() {
+
+    private val db = FirebaseFirestore.getInstance()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -31,6 +35,14 @@ class RegisterFragment: Fragment() {
             if (email.text.isNotEmpty() && contrasenya.text.isNotEmpty()){
                 FirebaseAuth.getInstance().createUserWithEmailAndPassword(email.text.toString(),contrasenya.text.toString()).addOnCompleteListener {
                     if (it.isSuccessful){
+                        val valors = hashMapOf<String, Any>(
+                            "usuario" to "",
+                            "telefono" to "",
+                            "edad" to "",
+                            "imageUrl" to ""
+                        )
+
+                        db.collection("users").document(email.text.toString()).set(valors)
                         showHome(it.result?.user?.email?:"")
                     } else {
                         showAlert()

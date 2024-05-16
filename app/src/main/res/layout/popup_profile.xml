@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#DCEB80FE">
+
+    <ImageButton
+        android:id="@+id/closeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cerrar"
+        android:background="#00FFFFFF"/>
+
+    <ImageView
+        android:id="@+id/profileImageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/perfil" />
+
+    <Button
+        android:id="@+id/changeImageButton"
+        android:layout_width="199dp"
+        android:layout_height="wrap_content"
+        android:text="Cambiar imagen"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"/>
+
+</LinearLayout>

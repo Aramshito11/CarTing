@@ -8,4 +8,5 @@
     <string name="correo">Correo</string>
     <string name="user">User</string>
     <string name="usuari">Usuari</string>
+    <string name="profile_image" />
 </resources>
